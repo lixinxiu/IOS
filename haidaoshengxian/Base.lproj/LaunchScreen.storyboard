@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="启动页.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zpb-FB-5Uv">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zpb-FB-5Uv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="9LF-29-gv9"/>
+                            <constraint firstItem="zpb-FB-5Uv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BvO-Ge-vAv"/>
+                            <constraint firstItem="zpb-FB-5Uv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="W6J-1j-Ti8"/>
+                            <constraint firstItem="zpb-FB-5Uv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="bjF-46-a3K"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="zpb-FB-5Uv" secondAttribute="bottom" id="fOZ-77-lzG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zpb-FB-5Uv" secondAttribute="trailing" constant="-20" id="ovn-2P-mJ2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="zpb-FB-5Uv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="fOZ-77-lzG"/>
+                                <exclude reference="9LF-29-gv9"/>
+                                <exclude reference="BvO-Ge-vAv"/>
+                                <exclude reference="W6J-1j-Ti8"/>
+                                <exclude reference="bjF-46-a3K"/>
+                                <exclude reference="ovn-2P-mJ2"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="zpb-FB-5Uv"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="fOZ-77-lzG"/>
+                                <include reference="9LF-29-gv9"/>
+                                <include reference="BvO-Ge-vAv"/>
+                                <include reference="W6J-1j-Ti8"/>
+                                <include reference="bjF-46-a3K"/>
+                                <include reference="ovn-2P-mJ2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="启动页.jpg" width="1242" height="2208"/>
+    </resources>
+</document>
